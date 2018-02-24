@@ -1,80 +1,104 @@
 html {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 18
+  font-size: 18px !important;
 }
 
 .container-fluid {
-  margin: auto 450px;
+  margin: 0px 479px;
+  padding: 0px;
 }
 
 /* NAVBAR */
 .navbar {
-  border-top: 0px;
-  margin-bottom: 40px;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  text-align: center;
+}
+
+.navbar-header {
+  background-color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #ffffff;
+  padding: 20px 15px;
 }
 
 .navbar-brand {
-  padding: 40px !important;
-  background-color: #4aaaa5;
-  line-height: 0px !important;
-  color: #ebebeb !important;
-  font-size: 1.5em;
+  color: #ffffff !important;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .navbar-nav {
   float: right;
-  padding: 0px;
-  margin-top: 30px;
+  height: auto;
+  margin-top: 20px;
 }
 
-li a {
-  padding: 0px 15px !important;
+/* BODY */
+.mbody {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-
-/* MAIN CONTAINER */
-.col-lg-9 {
-  border: 1px solid #ddd;
-  padding: 40px;
-  width: 71%;
+.mbody .row {
+  width: 100%;
 }
 
-h1 {
+.col-sm-8 {
+  border: 1px solid #dddddd;
+  padding: 20px 30px;
+  width: 67.5%;
+}
+
+.col-sm-8 h1 {
   color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
 }
 
-.col-lg-3 {
+.col-sm-8 hr {
+  border: 1px solid #cccccc;
+}
+
+.col-sm-8 img {
+  margin: 10px;
+  float: left;
+}
+
+.col-sm-8 p {
+  line-height: 1.5;
+}
+
+.sidebar {
+  width: 28%;
   float: right;
-}
-
-.panel {
-  padding: 10px;
-  margin: 0px 20px 0px -20px;
+  padding-right: 0px;
 }
 
 .panel-heading {
-  background-color: #fff !important;
-}
-
-a img {
-  height: 50px;
-  width: 50px;
-}
-
-.col-lg-4 {
-  padding: 0px;
-  margin: 0px;
+  color: #4aaaa5 !important;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 /* FOOTER */
 .foot {
-  position: absolute;
-  background-color: #777;
-  border-top: 10px solid #4aaaa5;
-  bottom: 0px;
-  width: 100%;
-  margin: 0px;
-  height: 70px;
+  border-top: 5px solid #4aaaa5;
+  background-color: #666666;
   text-align: center;
-  line-height: 60px;
+  padding: 20px 0px;
+  position: absolute;
+  bottom: 0px;
+  width: 962px;
+}
+
+/* width < 992px, sm & xs*/
+@media only screen and (max-width:991px) {
+  .col-lg-8 {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
 }
